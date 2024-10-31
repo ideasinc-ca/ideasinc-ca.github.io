@@ -3,39 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDEAS (2368782 ONTARIO INC.) Homepage</title>
+    <title>IDEAS</title>
     <style>
         body {
             background-color: black;
             color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
         }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .wide-box {
+            flex: 2; /* Increases the size relative to small boxes */
+        }
+
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #66ffff;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Homepage for <a href="https://ideasinc.ca">ideasinc.ca</a></h1>
-        <p>This is a simple homepage for ideasinc.ca</p>
-        <h2>About Us</h2>
-        <p>2368782 ONTARIO INC., founded on April 11, 2013, 
-            specializes in financial management consulting, investing in financial contracts for it's own account,
-             associated electronic equipment repair and maintenance, and related services.
-            Relocated to Toronto in 2022 for strategic advantages, 
-            the business renewed operations focusing on international derivatives 
-            and expanded its consultancy to New York. 
-            Recent developments include the registration of "International Derivatives Expertise and Systems" ("IDEAS")
-            as a business name, alongside ongoing strategic trading design.</p>
-        <h2>Contact</h2>
-        <p>Email:  dev@ideasinc.ca</p>
+    <div class="container">
+        <div class="box">
+            <h2>International Derivatives Expertise and Systems ("IDEAS")</a></h2>
+            <p>2368782 ONTARIO INC.</p>
+        </div>
+        <div class="box wide-box">
+            <h2>About Us</h2>
+            <p>2368782 ONTARIO INC., founded on April 11, 2013, 
+                specializes in financial management consulting, 
+                investing in financial contracts for it's own account, 
+                associated electronic equipment repair and maintenance, 
+                and related services. Relocated to Toronto in 2022 for 
+                strategic advantages, the business renewed operations 
+                focusing on international derivatives and expanded its 
+                consultancy to New York. Recent developments include 
+                the registration of "International Derivatives Expertise 
+                and Systems" ("IDEAS") as a business name, 
+                alongside ongoing strategic trading design.</p>
+        </div>
+        <div class="box">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:dev@ideasinc.ca">dev@ideasinc.ca</a></p>
+        </div>
     </div>
 </body>
 </html>
