@@ -14,7 +14,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            overflow-y: auto; /* Added to ensure scrolling when needed */
+            overflow-y: auto;
         }
 
         .container {
@@ -24,8 +24,8 @@
             justify-content: space-between;
             gap: 20px;
             flex-wrap: wrap;
-            align-items: flex-start; /* Aligns items to the start to prevent chopping */
-            padding-top: 20px; /* Add some padding to prevent chopping due to flex */
+            align-items: stretch; /* Ensures all items have the same height */
+            padding-top: 20px;
         }
 
         .box {
@@ -36,10 +36,12 @@
             border-radius: 10px;
             margin: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column; /* Ensures content within the box is laid out in a column */
         }
 
         .wide-box {
-            flex: 2; /* Increases the size relative to small boxes */
+            flex: 2;
         }
 
         h1 {
@@ -57,6 +59,7 @@
             font-size: 1em;
             line-height: 1.5;
             margin-bottom: 10px;
+            flex-grow: 1; /* Allows the paragraph to expand, filling available space */
         }
 
         a {
