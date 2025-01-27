@@ -42,6 +42,11 @@ body {
     text-shadow: 0 0 10px rgba(102, 255, 255, 0.5);
 }
 
+.glow-text-subtle {
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
 .tech-border {
     border: 1px solid rgba(102, 255, 255, 0.2);
     border-radius: 10px;

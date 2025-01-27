@@ -19,7 +19,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#leadership">Leadership</a>
+                        <a class="nav-link" href="#leadership">Consulting</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
@@ -69,26 +69,28 @@
 
         <section id="leadership" class="py-5">
             <div class="container">
-                <h2 class="text-center glow-text mb-5">Leadership</h2>
+                <h2 class="text-center glow-text mb-5">Consulting</h2>
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-6">
                         <div class="tech-border p-4 leadership-card">
                             <div class="text-center mb-4">
                                 <div class="avatar-container mb-3">
-                                    <img src="./assets/images/IMG_0241.jpg" alt="Founder & CEO" class="avatar-image">
+                                    <img src="./assets/images/IMG_0241.jpg" alt="Business Development" class="avatar-image">
                                 </div>
-                                <h3 class="glow-text">Founder & CEO</h3>
+                                <h3 class="glow-text">Business Development</h3>
                                 <p class="lead mb-3">Financial Markets & Derivatives Specialist</p>
                                 <div class="mt-3">
-                                    <p>A seasoned practitioner with over 15 years of experience in global markets, 
+                                    <p>We provide seasoned practitioners, each with 10+ years of experience in global markets, 
                                         including senior roles at major financial institutions in London and Toronto. 
-                                        Background in 
+                                        Technical background in
+                                        <a href="https://en.wikipedia.org/wiki/Yield_curve" class="glow-link">
+                                            yield curve</a> analytics, 
                                         <a href="https://en.wikipedia.org/wiki/XVA" class="glow-link">
                                             XVA</a> 
                                         pricing, portfolio optimization, and 
                                         <a href="https://en.wikipedia.org/wiki/Basel_III" class="glow-link">
                                             Basel</a> 
-                                        regulatory capital requirements.</p>
+                                        regulatory capital & liquidity requirements.</p>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +107,7 @@
                         <div class="tech-border p-4 h-100">
                             <h3 class="glow-text h4 mb-3">Fixed Income & Rates</h3>
                             <p>Solutions for interest rate pricing, trading, and structuring. Specializing in 
-                                <a href="https://en.wikipedia.org/wiki/Cross-currency_swap" class="glow-link">cross-currency</a> structures and 
+                                <a href="https://en.wikipedia.org/wiki/Currency_swap" class="glow-link">cross-currency</a> structures and 
                                 <a href="https://en.wikipedia.org/wiki/Yield_curve" class="glow-link">swap curve</a> analytics, including collateral optimization.</p>
                         </div>
                     </div>
@@ -139,7 +141,7 @@
                             <div class="timeline">
                                 <div class="mb-4">
                                     <h4 class="glow-text">2013</h4>
-                                    <p>Founded initially to serve a key client, instead
+                                    <p>Founded to pursue consulting opportunities, instead
                                         business pivoted to futures trading and quantitative research.</p>
                                 </div>
                                 <div class="mb-4">
@@ -169,7 +171,7 @@
                     <div class="col-lg-8">
                         <div class="tech-border p-4">
                             <div class="text-center">
-                                <p class="lead mb-0">Email: <a href="mailto:contact@ideasinc.ca">contact@ideasinc.ca</a></p>
+                                <p class="lead mb-0">Email: <a href="mailto:contact@ideasinc.ca" class="glow-link">contact@ideasinc.ca</a></p>
                             </div>
                         </div>
                     </div>
@@ -177,5 +179,21 @@
             </div>
         </section>
     </main>
+
+    <footer class="py-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="small glow-text-subtle mb-0">
+                        © <span id="copyright-year"></span> IDEAS corporation. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html> 
