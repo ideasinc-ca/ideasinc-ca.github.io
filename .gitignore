@@ -1,1 +1,6 @@
-business_activity.txt
+node_modules/
+dist/
+.DS_Store
+.env
+*.log
+*.txt
